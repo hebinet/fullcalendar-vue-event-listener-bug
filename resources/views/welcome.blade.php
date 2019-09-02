@@ -13,6 +13,7 @@
 </head>
 <body>
 <div id="app">
+    <h1>Event system not working</h1>
     <fullcalendar
         ref="pickupCalendar"
         default-view="dayGridWeek"
@@ -26,6 +27,9 @@
         :events="events"
         v-on:eventDrop="eventDrop"
     ></fullcalendar>
+
+    <h1>Event system working due to wrapping into an component</h1>
+    <fullcalendar-component></fullcalendar-component>
 </div>
 
 <script src="{{ mix('js/app.js') }}"></script>

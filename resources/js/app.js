@@ -32,6 +32,7 @@ import interactionPlugin from '@fullcalendar/interaction';
 
 // Registering the component works only like this
 Vue.component('fullcalendar', require('@fullcalendar/vue').default);
+Vue.component('fullcalendar-component', require('./components/FullcalendarComponent').default);
 
 const app = new Vue({
     el: '#app',
